@@ -34,3 +34,11 @@ correlation <- cor(cars$speed, cars$dist)
 
 # Print the correlation value
 correlation
+
+#plot linear line 
+# Scatter plot
+plot(cars$speed, cars$dist, main = "Scatter Plot with Linear Regression Line",
+     xlab = "Speed", ylab = "Distance")
+
+# Add the linear regression line
+abline(linearMod, col = "blue")
